@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Weather Dashboard</h1>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Enter city name" />
+        <button id="search-button">Search</button>
+      </div>
+      <div class="top-right">
+        <button id="location-button">Use My Location</button>
+        <label>
+          <input type="radio" name="unit" value="celsius"  /> Celsius
+        </label>
+        <label>
+          <input type="radio" name="unit" value="fahrenheit" /> Fahrenheit
+        </label>
+      </div>
+    </header>
+    <div class="container">
+      <div id="weather-info" class="weather-info">
+        <div class="parent-left"></div>
+        <div class="left-section" id="current-weather">
+          <!-- Content dynamically inserted by JavaScript -->
+        </div>
+        <div class="right-section">
+          <div class="upper-section">
+            <h4>Today's Weather Details</h4>
+            <div class="weather-details">
+              <div class="weather-detail">
+                <img
+                  src="images/humidity-removebg-preview.png"
+                  alt="Humidity Icon"
+                />
+                <p id="humidity">Humidity:</p>
+              </div>
+              <div class="weather-detail">
+                <img src="images/wind speed.png" alt="Wind Speed Icon" />
+                <p id="wind-speed">Wind Speed:</p>
+              </div>
+              <div class="weather-detail">
+                <img
+                  src="images/air_pressure-removebg-preview.png"
+                  alt="Pressure Icon"
+                />
+                <p id="pressure">Pressure:</p>
+              </div>
+              <div class="weather-detail">
+                <img
+                  src="images/real_feel-removebg-preview.png"
+                  alt="Real Feel Icon"
+                />
+                <p id="real-feel">Real Feel:</p>
+              </div>
+              
+          </div>
+          <div class="lower-section">
+            <h3>5-Day Forecast</h3>
+            <!-- Placeholder for 5-day forecast cards -->
+            <div id="forecast-cards" class="forecast-cards"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
